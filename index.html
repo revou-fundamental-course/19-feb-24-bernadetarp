@@ -29,7 +29,17 @@
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="banner">
-                <img src="assets/our-profile-1.jpg" alt="">
+                <img class="img-slideshow" src="assets/banner-1.jpg" alt="">
+                <img class="img-slideshow" src="assets/banner-2.jpg" alt="">
+                <img class="img-slideshow" src="assets/banner-3.jpg" alt="">
+                <a id="prev" onclick="plusDivs(-1)"><i class='bx bx-chevron-left'></i></a>
+                <a id="next" onclick="plusDivs(1)"><i class='bx bx-chevron-right'></i></a>
+                </div>
+                <div class="banner-navigation">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </section>
 
