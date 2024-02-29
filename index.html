@@ -13,7 +13,12 @@
 <body>
     <header>
         <!-- Navbar -->
-        <a class="logo" href="#"><img src="assets/logo.png" alt=""></a>
+        <div class="container-logo">
+            <a class="logo" href="#"><img src="assets/logo.png" alt=""></a>
+            <div class="hamburger" id="icon">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#our-profile">Our Profile</a></li>
@@ -26,10 +31,20 @@
         <section class="home" id="home">
             <div class="heading-home">
                 <h2>Welcome, <span id="name">(your name)</span>!</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>At Devolp, we are dedicated to transforming ideas into digital reality.</p>
             </div>
             <div class="banner">
-                <img src="assets/our-profile-1.jpg" alt="">
+                <img class="img-slideshow" src="assets/banner-1.jpg" alt="">
+                <img class="img-slideshow" src="assets/banner-2.jpg" alt="">
+                <img class="img-slideshow" src="assets/banner-3.jpg" alt="">
+                <a id="prev" onclick="plusDivs(-1)"><i class='bx bx-chevron-left'></i></a>
+                <a id="next" onclick="plusDivs(1)"><i class='bx bx-chevron-right'></i></a>
+                </div>
+                <div class="banner-navigation">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </section>
 
@@ -38,9 +53,9 @@
             <div class="introduction">
                 <div class="content" id="content-intro">
                     <p>who we are</p>
-                    <h2>Lorem ipsum dolor sit.</h2>
-                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolor esse fugiat rerum distinctio illo, aperiam dolorem quam et porro maiores consequatur ullam molestiae suscipit tempore blanditiis ratione neque!</article>
-                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolor esse fugiat rerum distinctio illo.</article>
+                    <h2>Crafting Tomorrow's Digital Landscape</h2>
+                    <article>Devolp is a place where technology meets creativity to shape digital futures. Our dedicated team of tech enthusiasts brings passion and expertise to every project. Dive into the essence of who we are and what drives us in the world of IT services.</article>
+                    <article>With years of experience in Website Development, UI/UX Design, and Mobile App Development, we are ready to bring hapinness to our clients.</article>
                     <div class="container-details">
                         <div class="detail" id="detail1">
                             <h3>50+</h3>
@@ -65,26 +80,26 @@
                 <div class="content" id="content-vm">
                     <div class="vision">
                         <p>Vision</p>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Quam laudantium debitis maiores.</h3>
+                        <h3>Empowering Digital Innovation through cutting-edge technology, creative design, and visionary strategies.</h3>
                     </div>
                     <div class="mission">
                         <p>Mission</p>
                         <div class="container-mission">
                             <div class="mission-box" id="mission1">
                                 <i class='bx bx-rocket'></i>
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <p>Push the boundaries of digital possibilities.</p>
                             </div>
                             <div class="mission-box" id="mission2">
                                 <i class='bx bx-data' ></i>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ab maiores!</p>
+                                <p>Maximize development to create impactful data-driven experiences.</p>
                             </div>
                             <div class="mission-box" id="mission3">
                                 <i class='bx bx-time'></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>Save time and working together efficiently to achieve shared goals.</p>
                             </div>
                             <div class="mission-box" id="mission4">
                                 <i class='bx bx-happy-alt'></i>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quasi explicabo.</p>
+                                <p>Spread smiles and ensure a trail of happy and satisfied customers.</p>
                             </div>
                         </div>
                     </div>
@@ -92,20 +107,20 @@
             </div>
             <div class="headquarter">
                 <div class="hq-text">
-                    <h2>Our Headquarter</h2>
-                    <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ducimus unde perferendis reprehenderit eum voluptas.</article>
+                    <h2>Our Headquarters</h2>
+                    <article>Our headquarters is not just a workplace. It's a hub of ideation, problem-solving, and breakthrough moments.</article>
                 </div>
                 <div class="hq-location">
                     <div class="location" id="jakarta">
-                        <img src="assets/our-profile-1.jpg" alt="">
+                        <img src="assets/hq-jakarta.jpg" alt="">
                         <p>Jakarta</p>
                     </div>
                     <div class="location" id="bandung">
-                        <img src="assets/our-profile-1.jpg" alt="">
+                        <img src="assets/hq-bandung.jpg" alt="">
                         <p>Bandung</p>
                     </div>
                     <div class="location" id="surabaya">
-                        <img src="assets/our-profile-1.jpg" alt="">
+                        <img src="assets/hq-surabaya.jpg" alt="">
                         <p>Surabaya</p>
                     </div>
                 </div>
@@ -117,33 +132,33 @@
         <section class="portfolio" id="portfolio">
             <div class="heading-portfolio">
                 <h2>Portfolio</h2>
-                <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</article>
+                <article>Discover how Devolp turns ideas into masterpieces, leaving a lasting impact on businesses.</article>
             </div>
             <div class="content-portfolio">
                 <div class="project" id="project1">
-                    <img src="assets/our-profile-1.jpg" alt="">
+                    <img src="assets/project-1.jpg" alt="">
                     <div class="project-text">
                         <p id="project-type">Website Development</p>
-                        <h3>Project 1</h3>
-                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores tempora adipisci animi veritatis consequatur mollitia, sint atque blanditiis laboriosam!</p>
+                        <h3>QuantumWeb</h3>
+                        <p id="description">Revolutionizing online presence, QuantumWeb is a dynamic website. Its responsive design and advanced functionalities create a seamless user experience, setting a new standard for modern websites.</p>
                         <a href="">See detail<i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
                 <div class="project" id="project2">
-                    <img src="assets/our-profile-1.jpg" alt="">
+                    <img src="assets/project-2.jpg" alt="">
                     <div class="project-text">
                         <p id="project-type">UI/UX Design</p>
-                        <h3>Project 2</h3>
-                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores tempora adipisci animi veritatis consequatur mollitia, sint atque blanditiis laboriosam!</p>
+                        <h3>TravelJoy</h3>
+                        <p id="description">This App redefines travel experiences with its captivating UI/UX design. Devolp's designers crafted a visually appealing interface that simplifies trip planning and making every journey memorable.</p>
                         <a href="">See detail<i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
                 <div class="project" id="project3">
-                    <img src="assets/our-profile-1.jpg" alt="">
+                    <img src="assets/project-3.jpg" alt="">
                     <div class="project-text">
                         <p id="project-type">Mobile App Development</p>
-                        <h3>Project 3</h3>
-                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores tempora adipisci animi veritatis consequatur mollitia, sint atque blanditiis laboriosam!</p>
+                        <h3>PokdeDex Explorer</h3>
+                        <p id="description">Dive into the captivating world of Pokemon with the PokeDex Explorer App, a mobile application meticulously crafted by Devolp. This app serves as a comprehensive companion for Pokemon enthusiasts.</p>
                         <a href="">See detail<i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
@@ -154,7 +169,7 @@
         <section class="message-us" id="message-us">
             <div class="heading-message">
                 <h2>Message Us</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>We would love to hear from you!</p>
             </div>
             <div class="content-message">
                 <form name="message-form" onsubmit="return validateForm()" action="">

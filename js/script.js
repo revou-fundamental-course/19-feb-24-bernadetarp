@@ -5,6 +5,7 @@ function replaceName() {
 
 replaceName()
 
+// Validate Form Message Us
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
@@ -38,3 +39,42 @@ btn_submit.addEventListener("click", () => {
     var currentDate = weekday[date.getDay()-1] + ", " + ('0' + date.getDate()).slice(-2) + "-" + ('0' + (date.getMonth()+1)).slice(-2) + "-" + date.getFullYear() + ", " + ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2) + ":" + ('0' + date.getSeconds()).slice(-2);
     document.getElementById("date-time").innerText = currentDate;
 })
+
+// Banner Swiper
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs((slideIndex += n));
+}
+
+function currentSlide(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var imgList = document.getElementsByClassName("img-slideshow");
+    var dot = document.getElementsByClassName("dot")
+    if (n > imgList.length) slideIndex = 1;
+    else if (n < 1) slideIndex = imgList.length;
+
+    for (i = 0; i < imgList.length; i++) {
+        imgList[i].style.display = "none";
+    }
+
+    for (i = 0; i < dot.length; i++) {
+        dot[i].className = dot[i].className.replace("active", "");
+    }
+
+    imgList[slideIndex - 1].style.display = "block";
+    dot[slideIndex-1].className += " active";
+}
+
+// Hamburger menu: for next development
+
+// hamburger = document.querySelector(".hamburger");
+// hamburger.onclick = function() {
+//     navBar = document.querySelector(".navbar");
+//     navBar.classList.toggle("active");
+// }
