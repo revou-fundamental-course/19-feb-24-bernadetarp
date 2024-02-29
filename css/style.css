@@ -341,7 +341,7 @@ main {
 }
 
 .heading-portfolio {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .heading-portfolio h2, article {
@@ -669,6 +669,10 @@ footer p {
         gap: 1.5rem;
     }
 
+    .heading-portfolio {
+        margin-bottom: 0.5rem;
+    }
+
     .heading-portfolio article {
         line-height: 1.6;
     }
@@ -712,7 +716,7 @@ footer p {
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     header {
         width: 100%;
-        padding: 16px 24px;
+        padding: 16px 32px;
         right: 0;
         gap: 1rem;
     }
@@ -758,6 +762,10 @@ footer p {
 
     .portfolio {
         gap: 1.5rem;
+    }
+
+    .heading-portfolio {
+        margin-bottom: 0.5rem;
     }
     
     .heading-portfolio article {
@@ -806,5 +814,109 @@ footer p {
 
     footer {
         padding: 16px 24px;
+    }
+}
+
+/* Medium devices (landscape tablets, 769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    header {
+        width: 100%;
+        padding: 16px 32px;
+        gap: 1rem;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .navbar {
+        column-gap: 0.75rem;
+    }
+    
+    main {
+        width: 100%;
+        padding: 6rem 3rem 5rem;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .introduction {
+        gap: 3rem;
+    }
+
+    #banner-intro img {
+        width: 200px;
+        height: 330px;
+    }
+    
+    .square {
+        width: 200px;
+        height: 330px;
+    }
+
+    .hq-location {
+        gap: 2rem;
+    }
+
+    .location img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .heading-portfolio {
+        margin-bottom:2rem;
+    }
+
+    .content-portfolio {
+        gap: 1rem;
+    }
+
+    .content-message {
+        gap: 3rem;
+    }
+}
+
+/* Large devices (laptop and small desktop, 992px to 1279px)*/
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+    .banner img {
+        height: 370px;
+    }
+
+    .introduction {
+        gap: 3rem;
+    }
+
+    #banner-intro img {
+        width: 400px;
+        height: 430px;
+    }
+
+    .square {
+        width: 400px;
+        height: 430px;
+    }
+
+    .headquarter {
+        gap: 4rem;
+    }
+
+    .location img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .heading-portfolio {
+        margin-bottom:2rem;
+    }
+
+    .content-portfolio {
+        gap: 2rem;
+    }
+
+    .content-message {
+        gap: 3rem;
     }
 }
