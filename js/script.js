@@ -70,3 +70,11 @@ function showDivs(n) {
     imgList[slideIndex - 1].style.display = "block";
     dot[slideIndex-1].className += " active";
 }
+
+// Hamburger menu: for next development
+
+// hamburger = document.querySelector(".hamburger");
+// hamburger.onclick = function() {
+//     navBar = document.querySelector(".navbar");
+//     navBar.classList.toggle("active");
+// }

@@ -587,11 +587,20 @@ footer p {
     header {
         width: 100%;
         padding: 16px 24px;
+        flex-direction: column;
     }
 
     main {
         width: 100%;
         padding: 5rem 1.5rem 5rem;
+    }
+
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo img {
@@ -608,9 +617,24 @@ footer p {
     }
 
     .navbar {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        gap: 1rem;
+        height: 0;
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgb(63 63 63 / 5%);
+        overflow: hidden;
+        transition: 0.2s;
     }
 
+    .navbar .active {
+        height: 150px;
+    }
+    
     .home {
         margin-bottom: 5rem;
     }
@@ -767,7 +791,7 @@ footer p {
     .heading-portfolio {
         margin-bottom: 0.5rem;
     }
-    
+
     .heading-portfolio article {
         line-height: 1.6;
     }
